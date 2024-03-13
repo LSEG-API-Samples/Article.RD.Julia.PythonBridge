@@ -1,0 +1,33 @@
+{
+  "http": {        
+     "request-timeout": 60        
+  },
+  "logs": {
+    "level": "debug",
+    "transports": {
+      "console": {
+        "enabled": false
+      },
+      "file": {
+        "enabled": false,
+        "name": "/tmp/refinitiv-data-lib.log"
+      }
+    }
+  },
+  "sessions": {
+    "default": "desktop.workspace", 
+    "desktop": {
+      "workspace": {
+        "app-key": "<appkey>"
+      }
+    },
+    "platform": {
+        "rdp": {
+            "app-key": "<appkey>",
+            "username": "<machine ID>",
+            "password": "<machine password",
+            "signon_control": true
+        }
+    }
+  }
+}
